@@ -1,7 +1,11 @@
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 
-export default function Layout({ children }) {
+type LayoutProps = {
+  children: React.ReactNode
+}
+
+export default function Layout({ children }: LayoutProps) {
 	return (
 		<div>
 			<h1>PRIME DENTAL IMPLANT TECH</h1>
