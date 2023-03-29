@@ -1,18 +1,28 @@
-import styles from './Navbar.module.scss'
-import Link from 'next/link'
+import styles from './Navbar.module.scss';
+import Link from 'next/link';
 
 export default function Navbar() {
   return (
     <div className={styles.nav}>
-      <Link href="/">
-        <h1 className={styles.link}>Prime Dental</h1>
-      </Link>
-      <Link href="/technology">
-        <h2 className={styles.link}>Technology</h2>
-      </Link>
-      <Link href="/turnaround">
-        <h2 className={styles.link}>Turnaround Times</h2>
-      </Link>
+      <div className={styles.home}>
+        <Link href="/">
+          <h1 className={styles.link}>Prime Dental</h1>
+        </Link>
+      </div>
+
+      <div className={styles.container}>
+        <div className={styles.item}>
+          <Link href="/technology">
+            <h2 className={styles.link}>Technology</h2>
+          </Link>
+        </div>
+
+        <div className={styles.item}>
+          <Link href="/turnaround">
+            <h2 className={styles.link}>Turnaround Times</h2>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
