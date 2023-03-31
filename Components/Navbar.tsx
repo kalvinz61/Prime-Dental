@@ -1,7 +1,8 @@
-import styles from './Navbar.module.scss';
+import styles from '../styles/modules/Navbar.module.scss';
 import Link from 'next/link';
 
 export default function Navbar() {
+  console.log(styles)
   return (
     <div className={styles.nav}>
       <div className={styles.home}>
