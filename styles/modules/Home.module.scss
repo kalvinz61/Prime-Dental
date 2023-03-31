@@ -1,0 +1,44 @@
+.container {
+  background-color: #fff8dc;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.smallCard {
+  width: 40rem;
+  height: 40rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.largeCard {
+  width: 55rem;
+  height: 40rem;
+  max-width: 55rem;
+  max-height: 40rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border: solid 1px black;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.smallText {
+  font-size: 3rem;
+  line-height: 5rem;
+  font-weight: bold;
+}
+.largeText {
+  font-size: 5rem;
+  line-height: 8rem;
+  font-weight: bold;
+}
